@@ -1,5 +1,5 @@
 <script>
-	let content = 'Default value';
+	let content = 'Default button';
 </script>
 
 <button>{content}</button>
