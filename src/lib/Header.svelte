@@ -2,8 +2,8 @@
 	import Button from './components/Button.svelte';
 </script>
 
-<nav>
-	<ul>
+<nav class="px-4 flex justify-between items-center gap-20">
+	<ul class=" flex gap-4">
 		<li><a href="./">Home</a></li>
 		<li><a href="about">about</a></li>
 		<li><a href="#">Biocontrol</a></li>
