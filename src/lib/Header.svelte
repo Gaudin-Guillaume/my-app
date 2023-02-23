@@ -24,7 +24,7 @@
 		top: 0;
 		font-family: sans-serif;
 		margin: 0 !important;
-		opacity: 0.2;
+		opacity: 1;
 	}
 
 	ul {
