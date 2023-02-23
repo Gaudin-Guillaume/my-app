@@ -1,2 +1,2 @@
-<h1>Guillaume Gaudin, étudiant en Master UI/UX design </h1>
+<h1>Lead the change.</h1>
 
