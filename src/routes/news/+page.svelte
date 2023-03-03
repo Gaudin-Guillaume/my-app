@@ -1,6 +1,8 @@
 <script>
-import { API_URL } from '$lib/config.js'
+import { API_URL } from '$lib/config.js';
+import {getAssetURL} from '$lib/utils.js'
 import { Directus } from '@directus/sdk';
+
 
 const directus = new Directus(API_URL)
 
@@ -24,7 +26,7 @@ const articles = directus.items('articles').readByQuery({
   {#each value.data as item}
       <!-- <pre>{JSON.stringify(item, undefined, 2)}</pre> -->
       <article>
-        <img src={"https://iomc1bh1.directus.app/files/" + item.image.id} alt={item.title}>
+        <img src={getAssetURL(item.filename_disk)} alt={item.title} loading="lazy"/>
         <h2>{item.title}</h2>
       </article>
   {/each}
