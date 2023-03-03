@@ -1,7 +1,8 @@
 <script>
+import { API_URL } from '$lib/config.js'
 import { Directus } from '@directus/sdk';
 
-const directus = new Directus('https://iomc1bh1.directus.app/')
+const directus = new Directus(API_URL)
 
 const articles = directus.items('articles').readByQuery({
   filter: {
