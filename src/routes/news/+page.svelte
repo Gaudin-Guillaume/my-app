@@ -2,6 +2,7 @@
 import { Directus } from '@directus/sdk';
 
 const directus = new Directus('https://iomc1bh1.directus.app/')
+
 const articles = directus.items('articles').readByQuery({
   filter: {
 		status: {
