@@ -1,11 +1,28 @@
 {
-  "hide-files.files": [],
+  "hide-files.files": [
+    ".eslintignore",
+    ".eslintrc.cjs",
+    ".gitattributes",
+    ".npmrc",
+    ".prettierignore",
+    ".prettierrc",
+    "node_modules",
+    ".svelte-kit"
+  ],
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true
+    "**/Thumbs.db": true,
+    ".eslintignore": true,
+    ".eslintrc.cjs": true,
+    ".gitattributes": true,
+    ".npmrc": true,
+    ".prettierignore": true,
+    ".prettierrc": true,
+    "node_modules": true,
+    ".svelte-kit": true
   }
 }
