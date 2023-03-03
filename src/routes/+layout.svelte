@@ -1,11 +1,5 @@
 <script>
-	import { Directus } from "directus-sdk-javascript";
 
-	const directus = new Directus('https://iomc1bh1.directus.app/', {
-		project: 'M2i',
-		storage: window.localStorage
-	});
-	// Your selected Skeleton theme:
 	
 	// This contains the bulk of Skeletons required styles:
 	import '@skeletonlabs/skeleton/styles/all.css';

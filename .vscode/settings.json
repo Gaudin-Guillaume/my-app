@@ -8,7 +8,6 @@
     ".prettierrc",
     "node_modules",
     ".svelte-kit",
-    ".gitignore",
     ".vscode"
   ],
   "files.exclude": {
@@ -26,7 +25,6 @@
     ".prettierrc": true,
     "node_modules": true,
     ".svelte-kit": true,
-    ".gitignore": true,
     ".vscode": true
   }
 }
