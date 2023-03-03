@@ -1,5 +1,5 @@
 <script>
-	import Button from './components/Button.svelte';
+	import Button from '../components/Button.svelte';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
@@ -7,12 +7,12 @@
 	<ul class=" flex gap-4">
 		<li><a href="./">Home</a></li>
 		<li><a href="about">about</a></li>
-		<li><a href="#">Biocontrol</a></li>
-		<li><a href="#">contact</a></li>
+		<li><a href="newspnp">Biocontrol</a></li>
+		<li><a href="./">contact</a></li>
 	</ul>
 
 	<LightSwitch class="ml-auto" />
-	<Button />
+	<Button content={'contact'} />
 </nav>
 
 <style>

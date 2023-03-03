@@ -14,5 +14,5 @@
 		padding-top:5px;
 		padding-bottom:5px;
 		border-radius:1000px;
-	}
+		width:fit-content;}
 </style>
