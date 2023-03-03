@@ -24,7 +24,7 @@ const articles = directus.items('articles').readByQuery({
   {#each value.data as item}
       <!-- <pre>{JSON.stringify(item, undefined, 2)}</pre> -->
       <article>
-        <img src={"example.com/assets/" + item.image} alt={item.title}>
+        <img src={"https://iomc1bh1.directus.app/assets/" + item.image} alt={item.title}>
         <h2>{item.title}</h2>
       </article>
   {/each}
