@@ -7,7 +7,7 @@
 	<ul class=" flex gap-4">
 		<li><a href="./">Home</a></li>
 		<li><a href="about">about</a></li>
-		<li><a href="newspnp">Biocontrol</a></li>
+		<li><a href="news">Biocontrol</a></li>
 		<li><a href="./">contact</a></li>
 	</ul>
 
