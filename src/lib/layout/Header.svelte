@@ -13,7 +13,7 @@
 	</ul>
 
 	<LightSwitch class="ml-auto" />
-	<span class="divider-vertical h-10" />
+	<span class="divider-vertical h-10 m-0" />
 	<Bouton content={'contact'} />
 </nav>
 
@@ -24,6 +24,11 @@ img {
 		max-width: 163px;
 		object-fit: contain;
 		aspect-ratio: 163 / 71;
+	}
+
+	a{
+		text-decoration-line:none;
+		color:red;
 	}
 
 	nav {

@@ -43,18 +43,37 @@ h1 {
 
 section{
 		display:flex;
-		height:90vh;
 		justify-content:center;
 		align-content:center;
-		width:100%;
 
 	}
 
 	.autoGrid {
-	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-	gap: 1.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap : 1.5rem;
+	
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px;
+  height: 100vh;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+}
+
+.col {
+  background-color: #ddd;
+  overflow: hidden;
+  padding: 20px;
+  display:flex;
+  justify-content:center;
+  align-content:center;
 }
 
 :root {

@@ -2,14 +2,14 @@
 	export let content ='';
 </script>
 
-<button class="shadow-lg">{content}<img src="./bouton.png" alt="flèche" class="h-6 ml-3 mr-0"/></button>
+<button class="shadow-lg">{content}<img src="./plus+.png" alt="flèche" class="h-6 ml-3 mr-0 "/></button>
 
 <style>
 	button {
-		color: white;
+		color: #15514F;
 		display:flex;
 		align-items:center;
-		background-color: #15514F;
+		border:solid 1px #15514F;
 		font-size:1em;
 		padding-left:15px;
 		padding-right:6px;

@@ -11,6 +11,7 @@ import '../app.postcss';
 						
 
 	import Header from '$lib/layout/Header.svelte';
+	import Footer from '$lib/layout/Footer.svelte';
 
 	import { AppShell } from '@skeletonlabs/skeleton';
 
@@ -30,5 +31,5 @@ import '../app.postcss';
 		<slot />
 	</div>
 
-	<svelte:fragment slot="footer">Footer</svelte:fragment>
+	<svelte:fragment slot="footer"><Footer/></svelte:fragment>
 </AppShell>

@@ -1,63 +1,88 @@
 <script>
 	import Bouton from '$lib/components/Button.svelte';
+	import Boutonbis from '$lib/components/Buttonbis.svelte';
+
+	import Map from '$lib/components/Mapbox.svelte';
 
 </script>
 
-<section id="hero" class="gap-4">
-<h1>
-	<span class=" text-5xl bg-neutral-700 bg-clip-text text-transparent box-decoration-clone title">
-		Lead the change.
-	</span>
-</h1>
-<p><span class="text-4x1 bg-neutral-700 bg-clip-text">Fournisseur de solution verte pour vos cultures</span></p>
+<section id="hero" class="gap-4 relative grid-section">
 
-<Bouton content={'en savoir plus'}  />
+	<video autoplay loop muted class="absolute top-0 w-full h-full object-cover">
+		<source src="/hero.mp4" type="video/mp4" />
+	</video>
+
+<div class="card relative z-3 space-y-8 p-8 flex flex-col shadow-lg blabla col">
+	<div class=" text-4xl bg-neutral-700 bg-clip-text">
+		M2i Group - Des solutions de biocontrôle pour une agriculture durable
+	</div>
+
+<span class="text-4x1 bg-neutral-700 bg-clip-text">Notre entreprise s'engage pour la protection de l'environnement et la santé des cultures</span>
+
+<div class="flex space-x-4">
+	<Bouton content={'en svoir plus'}/>
+	<Boutonbis content={'nos produit'}/>
+</div>
+</div>
+<div class="col"></div>
 
 </section>
 
-<section class="flex autoGrid bg-success-600">
-	<div class="flex">
-        <img src="./favicon.png">
-	</div>
-	<div>
-		<h2 class="text-6x1">
-			Sous tire 1.
-		</h2>
-		<p>
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-		</p>
-	
-<Bouton content={'en svoir plus'}/>
+<section class="flex justify-center items-center align-center autoGrid m-auto my-4 ">
+
+	<div class="flex w-full justify-end ">
+    	<img src="./abeille.jpg" alt="produit de biocontrole " class="card  w-96 relative left-12" >
+    </div>
+
+	<div class="bg-success-200 w-96 p-4 space-y-4 card z-10">
+		<div class="text-4xl font-semibold">
+			Solutions pour la protection des cultures .
+		</div>
+		<div>
+			Nous concevons des produits de biocontrole naturels certifiés pour une utilisation en agriculture biologique et respectueux de l'environnement. Nos solutions écologiques sont adaptées à tous les types de cultures. Protégez vos cultures tout en préservant la biodiversité avec nos produits de biocontrôle.
+		</div>
+	    <div class="flex space-x-4">
+		<Bouton content={'en svoir plus'}/>
+		<Boutonbis content={'nos produit'}/>
 </div>
 
+	</div>
+
 </section>
 
-<section class="flex autoGrid">
-	<div class="flex">
-        <img src="./carotte.png">
-	</div>
-	<div class="flex:column gap-8">
-		<h2 class="text-7x1 bg-neutral-700 bg-clip-text text-transparent box-decoration-clone">
+<section class="m-auto flex justify-center items-center align-center autoGrid my-12 w-screen">
+	<div class="flex w-full justify-end ">
+	<div class="bg-success-200 w-96 p-4 space-y-4 card z-10">
+		<div class="text-5xl font-semibold">
 			Sous tire 2.
-		</h2>
-		<p>
+		</div>
+		<div>
 			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-		</p>
+		</div>
 		<Bouton content={'découvrir'}/>
 	</div>
-
+	</div>
+	
+		<img src="./carotte.png" alt="produits pharmaceutiques" class="card  w-96 relative right-12" >
+	
 
 </section>
+
+<Map/>
 
 
 
 
 <style>
 	#hero{
+		position:relative;
 		display:flex;
-		flex-direction:column;
 		height:90vh;
 		justify-content:center;
 
+	}
+
+	.blabla{
+		width:32rem;
 	}
 </style>
