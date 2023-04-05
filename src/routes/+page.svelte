@@ -12,7 +12,7 @@
 		<source src="/hero.mp4" type="video/mp4" />
 	</video>
 
-<div class="card relative z-3 space-y-8 p-8 flex flex-col shadow-lg blabla col max-w-md">
+<div class="card relative z-3 space-y-8 p-8 flex flex-col shadow-lg blabla col max-w-md m-3 sm:m-0">
 	<div class=" text-4xl bg-neutral-700 bg-clip-text">
 		M2i Group - Des solutions de biocontrôle pour une agriculture durable
 	</div>
@@ -34,7 +34,7 @@
     	<img src="./abeille.jpg" alt="produit de biocontrole " class="card  w-96 relative left-12" >
     </div>
 
-	<div class="bg-success-200 w-96 p-4 space-y-4 card z-10">
+	<div class="bg-success-200 m-3 sm:m-0  p-4 space-y-4 card z-10">
 		<div class="text-4xl font-semibold">
 			Solutions pour la protection des cultures .
 		</div>
