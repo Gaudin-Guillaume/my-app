@@ -12,7 +12,7 @@
 		<source src="/hero.mp4" type="video/mp4" />
 	</video>
 
-<div class="card relative z-3 space-y-8 p-8 flex flex-col shadow-lg blabla col">
+<div class="card relative z-3 space-y-8 p-8 flex flex-col shadow-lg blabla col max-w-md">
 	<div class=" text-4xl bg-neutral-700 bg-clip-text">
 		M2i Group - Des solutions de biocontrôle pour une agriculture durable
 	</div>
@@ -63,7 +63,7 @@
 	</div>
 	</div>
 	
-		<img src="./carotte.png" alt="produits pharmaceutiques" class="card  w-96 relative right-12" >
+		<img src="./carotte.png" alt="produits pharmaceutiques" class="card  w-96 relative right-12 md:right-0" >
 	
 
 </section>
@@ -81,7 +81,4 @@
 
 	}
 
-	.blabla{
-		width:32rem;
-	}
 </style>
