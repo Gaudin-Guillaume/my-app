@@ -76,7 +76,6 @@
 <style>
 	#hero{
 		position:relative;
-		display:flex;
 		height:90vh;
 		justify-content:center;
 
