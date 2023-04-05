@@ -52,7 +52,7 @@
 
 <section class="m-auto flex justify-center items-center align-center autoGrid my-12 w-screen">
 	<div class="flex w-full justify-end ">
-	<div class="bg-success-200 w-96 p-4 space-y-4 card z-10">
+	<div class="bg-success-200  p-4 space-y-4 card z-10">
 		<div class="text-5xl font-semibold">
 			Sous tire 2.
 		</div>

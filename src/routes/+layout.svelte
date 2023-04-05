@@ -31,5 +31,5 @@ import '../app.postcss';
 		<slot />
 	</div>
 
-	<svelte:fragment slot="footer"><Footer/></svelte:fragment>
+	<svelte:fragment slot="footer"></svelte:fragment>
 </AppShell>
