@@ -20,8 +20,8 @@
 <span class="text-4x1 bg-neutral-700 bg-clip-text">Notre entreprise s'engage pour la protection de l'environnement et la santé des cultures</span>
 
 <div class="flex space-x-4">
-	<Bouton content={'en svoir plus'}/>
-	<Boutonbis content={'nos produit'}/>
+	<Bouton content={'en savoir plus'}/>
+	<Boutonbis content={'nos produits'}/>
 </div>
 </div>
 <div class="col"></div>
@@ -31,7 +31,7 @@
 <section class="flex justify-center items-center align-center autoGrid m-auto my-4 ">
 
 	<div class="flex w-full justify-end ">
-    	<img src="./abeille.jpg" alt="produit de biocontrole " class="card  w-96 relative left-12" >
+    	<img src="./abeille.jpg" alt="produit de biocontrole " class="card  w-96 relative left-0 sm:left-12" >
     </div>
 
 	<div class="bg-success-200 m-3 sm:m-0  p-4 space-y-4 card z-10">
@@ -42,8 +42,8 @@
 			Nous concevons des produits de biocontrole naturels certifiés pour une utilisation en agriculture biologique et respectueux de l'environnement. Nos solutions écologiques sont adaptées à tous les types de cultures. Protégez vos cultures tout en préservant la biodiversité avec nos produits de biocontrôle.
 		</div>
 	    <div class="flex space-x-4">
-		<Bouton content={'en svoir plus'}/>
-		<Boutonbis content={'nos produit'}/>
+		<Bouton content={'en savoir plus'}/>
+		<Boutonbis content={'nos produits'}/>
 </div>
 
 	</div>
@@ -63,7 +63,7 @@
 	</div>
 	</div>
 	
-		<img src="./carotte.png" alt="produits pharmaceutiques" class="card  w-96 relative right-12 md:right-0" >
+		<img src="./carotte.png" alt="produits pharmaceutiques" class="card  w-96 relative right-0 md:right-12" >
 	
 
 </section>
