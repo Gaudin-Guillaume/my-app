@@ -2,7 +2,7 @@
 	export let content='';
 </script>
 
-<button>{content}</button>
+<button class="rounded-xl">{content}</button>
 
 <style>
 	button {
@@ -13,7 +13,6 @@
 		padding-right:20px;
 		padding-top:5px;
 		padding-bottom:5px;
-		border-radius:1000px;
 		width:fit-content;
 		height:fit-content;
 		font-weight:100;

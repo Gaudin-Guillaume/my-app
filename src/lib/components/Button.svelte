@@ -2,7 +2,7 @@
 	export let content ='';
 </script>
 
-<button class="shadow-lg">{content}<img src="./bouton.png" alt="flèche" class="h-6 ml-3 mr-0"/></button>
+<button class="shadow-lg rounded-lg">{content}<img src="./bouton.png" alt="flèche" class="h-6 ml-3 mr-0"/></button>
 
 <style>
 	button {
@@ -15,7 +15,6 @@
 		padding-right:6px;
 		padding-top:10px;
 		padding-bottom:10px;
-		border-radius:5px;
 		width:fit-content;
 		height:fit-content;
 		font-weight:100;

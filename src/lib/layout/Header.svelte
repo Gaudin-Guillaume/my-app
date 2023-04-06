@@ -3,7 +3,7 @@
 	import { LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
-<nav class="px-4 flex justify-between items-center gap-16">
+<nav class="px-4 flex justify-between  items-center gap-16">
 	<ul class=" flex gap-8">
 		<li><a href="/"><img src="/logo-white.png" alt="M2i, Lead the change" /></a></li>
 		<li><a href="./">Home</a></li>

@@ -12,12 +12,12 @@
 		<source src="/hero.mp4" type="video/mp4" />
 	</video>
 
-<div class="card relative z-3 space-y-8 p-8 flex flex-col shadow-lg blabla col max-w-md m-3 sm:m-0">
-	<div class=" text-4xl bg-neutral-700 bg-clip-text">
+<div class="card relative bg-success-200/ z-3 space-y-8 p-8 flex flex-col shadow-lg blabla col  max-w-md m-3 sm:mx-auto">
+	<div class=" text-2xl bg-clip-text">
 		M2i Group - Des solutions de biocontrôle pour une agriculture durable
 	</div>
 
-<span class="text-4x1 bg-neutral-700 bg-clip-text">Notre entreprise s'engage pour la protection de l'environnement et la santé des cultures</span>
+<span class="text-4x1 bg-clip-text">Notre entreprise s'engage pour la protection de l'environnement et la santé des cultures</span>
 
 <div class="flex space-x-4">
 	<Bouton content={'en savoir plus'}/>
@@ -31,11 +31,14 @@
 <section class="flex justify-center items-center align-center autoGrid m-auto my-4 ">
 
 	<div class="flex w-full justify-end ">
-    	<img src="./abeille.jpg" alt="produit de biocontrole " class="card  w-96 relative left-0 sm:left-12" >
+    	<img src="./abeille.jpg" alt="produit de biocontrole " class="card  w-96 relative left-0 sm:left-12 top-24 sm:top-0 mx-auto" >
     </div>
 
-	<div class="bg-success-200 m-3 sm:m-0  p-4 space-y-4 card z-10">
-		<div class="text-4xl font-semibold">
+	<div class=" m-3 sm:m-0  p-4 space-y-4 card z-10">
+		<div class=" w-fit rounded-lg p-2 bg-secondary-500 shadow-lg ">
+			<img src="./feuille.png" alt="icone feuille d'arbre">
+		</div>
+		<div class="text-2xl font-semibold">
 			Solutions pour la protection des cultures .
 		</div>
 		<div>
@@ -53,8 +56,11 @@
 <section class="m-auto flex justify-center items-center align-center autoGrid my-12 w-screen">
 	<div class="flex w-full justify-end ">
 	<div class="bg-success-200  p-4 space-y-4 card z-10">
-		<div class="text-5xl font-semibold">
-			Sous tire 2.
+		<div class=" w-fit rounded-lg p-2 bg-secondary-500 shadow-lg ">
+			<img src="./chimie-pharma.png" alt="icone feuille d'arbre">
+		</div>
+		<div class="text-2xl font-semibold">
+			Sous titre 2.
 		</div>
 		<div>
 			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -63,7 +69,7 @@
 	</div>
 	</div>
 	
-		<img src="./carotte.png" alt="produits pharmaceutiques" class="card  w-96 relative right-0 md:right-12" >
+		<img src="./carotte.png" alt="produits pharmaceutiques" class="card  w-96 relative right-0 md:right-12 mx-auto" >
 	
 
 </section>
