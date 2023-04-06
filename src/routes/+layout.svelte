@@ -10,7 +10,7 @@ import '@skeletonlabs/skeleton/styles/all.css';
 import '../app.postcss';
 						
 
-	import Header from '$lib/layout/Header.svelte';
+	import Header from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/layout/Footer.svelte';
 
 	import { AppShell } from '@skeletonlabs/skeleton';
