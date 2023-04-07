@@ -10,7 +10,7 @@
 let current=0;
 </script>
 
-<div class="navbar z-50 bg-success-900">
+<div class="navbar z-50 bg-transparent">
     
     <a href="/"><img src="/logo-white.png" alt="M2i, Lead the change" style="height:64px;" /></a>
     <nav class:open={isMenuOpen}>
@@ -66,7 +66,7 @@ let current=0;
         top:100%;
         left:0;
         width:100%;
-        background-color:#15514F;
+        background-color:#ebebeb;
 
     }
 

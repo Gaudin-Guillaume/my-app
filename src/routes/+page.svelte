@@ -6,14 +6,14 @@
 
 </script>
 
-<section id="hero" class="gap-4 relative grid-section">
+<section id="hero" class="gap-4 relative grid-section mx-auto">
 
 	<video autoplay loop muted class="absolute top-0 w-full h-full object-cover">
 		<source src="/hero.mp4" type="video/mp4" />
 	</video>
 
 <div class="card relative bg-success-200/ z-3 space-y-8 p-8 flex flex-col shadow-lg blabla col  max-w-md m-3 sm:mx-auto">
-	<div class=" text-2xl bg-clip-text">
+	<div class=" text-3xl font-semibold bg-clip-text">
 		M2i Group - Des solutions de biocontrôle pour une agriculture durable
 	</div>
 
@@ -74,6 +74,43 @@
 
 </section>
 
+<section class="justify-center items-center align-center my-12 w-screen p-4 space-y-4 bg-gradient-to-r from-orange-500 to-red-500">
+	<div class="text-2xl font-semibold ">Quelques chiffres.</div>
+	<div>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+	</div>
+<div class="space-y-4 md:flex">
+	<div class="card flex:col p-4 space-y-4">
+		<div class="w-fit rounded-lg p-2 bg-secondary-500 shadow-lg ">
+			<img src="./feuille.png" alt="icone feuille d'arbre">
+		</div>
+		<div class="font-semibold">Chiffres 1</div>
+		<div>Un petit lorem ipsum ici ihistoire de combler les troues</div>
+		<Bouton content={'découvir'}/>
+	</div>
+
+	<div class="card flex:col p-4 space-y-4">
+		<div class="w-fit rounded-lg p-2 bg-secondary-500 shadow-lg ">
+			<img src="./feuille.png" alt="icone feuille d'arbre">
+		</div>
+		<div class="font-semibold">Chiffres 1</div>
+		<div>Un petit lorem ipsum ici ihistoire de combler les troues</div>
+		<Bouton content={'découvir'}/>
+	</div>
+
+	<div class="card flex:col p-4 space-y-4">
+		<div class="w-fit rounded-lg p-2 bg-secondary-500 shadow-lg ">
+			<img src="./feuille.png" alt="icone feuille d'arbre">
+		</div>
+		<div class="font-semibold">Chiffres 1</div>
+		<div>Un petit lorem ipsum ici ihistoire de combler les troues</div>
+		<Bouton content={'découvir'}/>
+	</div>
+</div>
+
+
+</section>
+
 <Map/>
 
 
@@ -83,7 +120,10 @@
 	#hero{
 		position:relative;
 		height:90vh;
+		display:flex;
 		justify-content:center;
+		align-items:center;
+		margin-top: -100px;
 
 	}
 
