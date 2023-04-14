@@ -112,7 +112,6 @@
     // Utiliser la méthode flyTo() pour déplacer la carte vers le point cliqué
     map.flyTo({
       center: coordinates,
-      zoom: 10
     });
   });
 
