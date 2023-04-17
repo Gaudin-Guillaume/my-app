@@ -1,2 +1,2 @@
-export const API_URL = 'iomc1bh1.directus.app/'
+export const API_URL = 'http://109.106.244.56:8055/'
 //http://109.106.244.56:8055/

@@ -1,7 +1,7 @@
 <script>
+import { Directus } from '@directus/sdk';
 import { API_URL } from '$lib/config.js';
 import {getAssetURL} from '$lib/utils.js'
-import { Directus } from '@directus/sdk';
 import Button from '$lib/components/Button.svelte';
 
 

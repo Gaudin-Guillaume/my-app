@@ -19,18 +19,18 @@
     <div class="flex justify-center align-center items-center ">
         <img src="carotte.png" alt="carotte bio" class="card">
     </div>
-    <div class="flex justify-center align-center items-center flex-col gap-4 ">
-        <div class="text-3xl md:text-4xl font-semibold w-96">Titre 1.</div>
-        <div class="w-96">
+        <div class="flex justify-center align-center items-center flex-col gap-4 ">
+            <div class="text-3xl md:text-4xl font-semibold w-96">Titre 1.</div>
+            <div class="w-96">
 			Nous concevons des produits de biocontrole naturels certifiés pour une utilisation en agriculture biologique et respectueux de l'environnement. Nos solutions écologiques sont adaptées à tous les types de cultures. Protégez vos cultures tout en préservant la biodiversité avec nos produits de biocontrôle.
-		</div>
-        <div class="flex gap-4 w-96">
+		    </div>
+            <div class="flex gap-4 w-96">
             <Bouton content={'FDS/TDS'}/>
             <Boutonbis content={'acheter'}/>
 
-        </div>
+            </div>
         
-    </div>
+        </div>
 </section>
 
 <section class="flex flex-col md:flex-row justify-center align-center items-center gap-8 h-screen">
