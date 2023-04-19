@@ -1,22 +1,18 @@
 <script>
-import { Directus } from '@directus/sdk';
-import { API_URL } from '$lib/config.js';
 import {getAssetURL} from '$lib/utils.js'
 import Button from '$lib/components/Button.svelte';
+import { directusClient } from '$lib/directus';
 
-
-
-const directus = new Directus(API_URL)
-
-const articles = directus.items('articles').readByQuery({
-  filter: {
-		status: {
-			_eq: 'published',
-		},
-	},
-});
-
+const articles = directusClient.items('articles').readByQuery({
+		limit: -1,
+		filter: {
+			status: {
+				_eq: 'published'
+			}
+		}
+	});
 </script>
+
 
 <div class="flex flex-col justify-center items-center w-screen">
 <div class="my-12 text-5xl font-semibold bg-primary-500 w-screen text-center">Articles.</div>
