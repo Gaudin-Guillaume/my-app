@@ -17,10 +17,12 @@ let current=0;
         <ul>
             
 		    <li on:click={()=>(isMenuOpen = false)}><a class:current={current===0} on:click={()=> (current = 0)} href="./">Home</a></li>
-		    <li on:click={()=>(isMenuOpen = false)}><a class:current={current===1} on:click={()=> (current = 1)} href="about">about</a></li>
-		    <li on:click={()=>(isMenuOpen = false)}><a class:current={current===2} on:click={()=> (current = 2)} href="news">Biocontrol</a></li>
+		    <li on:click={()=>(isMenuOpen = false)}><a class:current={current===1} on:click={()=> (current = 1)} href="about">Biocontrol</a></li>
+		    <li on:click={()=>(isMenuOpen = false)}><a class:current={current===2} on:click={()=> (current = 2)} href="news">News</a></li>
 		    <li on:click={()=>(isMenuOpen = false)}><a class:current={current===3} on:click={()=> (current = 3)} href="FDS">FDS-TDS</a></li>
-		    <li on:click={()=>(isMenuOpen = false)}><a on:click={()=> (current = 4)} href="./"><Button content={"nous contacter"}/></a></li>
+		    <li on:click={()=>(isMenuOpen = false)}><a class:current={current===4} on:click={()=> (current = 4)} href="rh">Recrutement</a></li>
+		    <li on:click={()=>(isMenuOpen = false)}><a class:current={current===5} on:click={()=> (current = 5)} href="test">test</a></li>
+		    <li on:click={()=>(isMenuOpen = false)}><a on:click={()=> (current = 6)} href="./"><Button content={"nous contacter"}/></a></li>
         </ul>
         
     </nav>

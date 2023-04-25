@@ -1,6 +1,11 @@
 <script>
     import { onMount } from 'svelte';
     import mapboxgl from 'mapbox-gl';
+    import Bouton from '$lib/components/Button.svelte';
+	import Boutonbis from '$lib/components/Buttonbis.svelte';
+	import { object_without_properties } from 'svelte/internal';
+  import {markerContent} from '$lib/utils.js'
+  import {markerTitle} from '$lib/utils.js'
     
     let map;
   
@@ -8,9 +13,12 @@
       mapboxgl.accessToken = 'pk.eyJ1IjoiZ3VpbGxhdW1lLW0yaSIsImEiOiJjbGZsOGdrZHAwMnBuNDJucWJqb3RmMXpyIn0.6UQxoZ9ibyzKrKCfYFS3Sg';
       map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
+        style: 'mapbox://styles/guillaume-m2i/clfl8nlbr000n01t6urpacrth',
         center: [2.223490651951153,48.84191757742829,],
-        zoom:3
+        zoom:5,
+        dragRotate: false,
+        scrollZoom: false,
+        touchZoomRotate: false,
       });
   
       // Ajoutez vos couches de carte ici
@@ -67,7 +75,8 @@
                     'coordinates': [ 4.735391280567392, 43.42213868530402]
                   },
                   'properties': {
-                    'name': 'Salin'
+                    'name': 'Salin',
+                    'description':`la ville de merde en fait t'as cru que t'étais qui là ? (ouai...ouai je parle à toi petite bouse des champ qui lit ce texte)`
                   }
                 },
                 // Ajouter d'autres villes ou points clés ici
@@ -88,14 +97,15 @@
           'text-font': ['Open Sans Bold'],
           'text-size': 12,
           'text-offset': [0, 0.5],
+          
           'icon-offset': [0, -15],
           'icon-allow-overlap': true, // Autoriser le chevauchement des marqueurs
           'text-anchor': 'top'
         },
         'paint': {
+          'text-color': '#fff',
           'icon-opacity': {
             'property': 'opacity',
-            
             'type': 'exponential',
             'stops': [
               [0, 0.2],
@@ -120,6 +130,18 @@
     map.getCanvas().style.cursor = 'pointer';
   });
 
+  // Add event listener for the click event on markers
+  map.on('click', 'cities', (e) => {
+      const cityName = e.features[0].properties.description;
+      markerContent.set(`You clicked on ${cityName}.`);
+      // ...
+    });
+  map.on('click', 'cities', (e) => {
+      const cityName = e.features[0].properties.name;
+      markerTitle.set(`${cityName}.`);
+      // ...
+    });
+
   // Remettre le curseur par défaut lorsque la souris quitte les marqueurs
   map.on('mouseleave', 'cities', () => {
     map.getCanvas().style.cursor = '';
@@ -137,6 +159,15 @@
       width: 100%;
     }
   </style>
-  
-  <div id="map"></div>
-  
+  <div class="relative flex items-center h-screen">
+  <div id="map" class="absolute"></div>
+
+  <div class=" gap-4 w-screen md:w-2/4 flex flex-col absolute px-4 md:px-32" style="color:white;">
+		<div class="text-2xl font-semibold">
+			{ $markerTitle }
+		</div>
+		<div>{ $markerContent }</div>
+		
+		<Bouton content={'découvrir'}/>
+	</div>
+  </div>
