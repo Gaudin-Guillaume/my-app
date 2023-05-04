@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@arisbh/marqueeck': ^0.1.5
   '@directus/sdk': ^10.3.1
   '@iconify/svelte': ^3.1.0
   '@skeletonlabs/skeleton': ^0.132.5
@@ -26,6 +27,7 @@ specifiers:
   vite: ^4.0.0
 
 dependencies:
+  '@arisbh/marqueeck': 0.1.5_svelte@3.55.1
   '@directus/sdk': 10.3.1
   directus-sdk-javascript: 2.15.0
   dotenv: 16.0.3
@@ -53,6 +55,14 @@ devDependencies:
   vite: 4.1.4
 
 packages:
+
+  /@arisbh/marqueeck/0.1.5_svelte@3.55.1:
+    resolution: {integrity: sha512-zCPeWoGTnMHUnH3LeWABtuAF7NkinUGJbRuw95s3ocEkOQd1GY6uM30Zvr+BTURRqsDra2rNTgCymwlr5A2oKQ==}
+    peerDependencies:
+      svelte: ^3.54.0
+    dependencies:
+      svelte: 3.55.1
+    dev: false
 
   /@directus/sdk/10.3.1:
     resolution: {integrity: sha512-+FUs1kQ27dmrHbAxO+FmCmmAHZrzyyZn+cXZMCtixkeBD8KYBFM7sUKtesQskSmsp5wUksrq2L9Cm+Z93G/ONg==}
@@ -2067,7 +2077,6 @@ packages:
   /svelte/3.55.1:
     resolution: {integrity: sha512-S+87/P0Ve67HxKkEV23iCdAh/SX1xiSfjF1HOglno/YTbSTW7RniICMCofWGdJJbdjw3S+0PfFb1JtGfTXE0oQ==}
     engines: {node: '>= 8'}
-    dev: true
 
   /tailwindcss/3.2.7_postcss@8.4.21:
     resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}

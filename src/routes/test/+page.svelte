@@ -1,5 +1,5 @@
 <script>
-	import Par from "$lib/components/parralax.svelte"
+	import Marqueeck from '@arisbh/marqueeck';
 </script>
 
-<Par/>
+<Marqueeck>Your element</Marqueeck>

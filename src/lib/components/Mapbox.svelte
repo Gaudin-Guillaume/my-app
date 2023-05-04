@@ -6,6 +6,8 @@
 	import { object_without_properties } from 'svelte/internal';
   import {markerContent} from '$lib/utils.js'
   import {markerTitle} from '$lib/utils.js'
+  import {markerdate} from '$lib/utils.js' 
+  import {markercollabo} from '$lib/utils.js' 
     
     let map;
   
@@ -43,7 +45,10 @@
                     'coordinates': [-0.6347201065951684,43.41735500669519, ]
                   },
                   'properties': {
-                    'name': 'Lacq'
+                    'name': 'Lacq',
+                    'description':`Site de R&D et fabrication`,
+                    'sbui':'depuis : 2013',
+                    'collabo':'Collaborateurs : 33',
                   }
                 },
                 {
@@ -53,7 +58,10 @@
                     'coordinates': [1.3137284017810025, 44.4772396037173]
                   },
                   'properties': {
-                    'name': 'Parnac'
+                    'name': 'Parnac',
+                    'description':`Site de conditionement`,
+                    'sbui':'depuis : 2015',
+                    'collabo':'Collaborateurs : 32',
                   }
                 },
 
@@ -64,7 +72,10 @@
                     'coordinates': [2.223490651951153,48.84191757742829,]
                   },
                   'properties': {
-                    'name': 'Saint-Cloud'
+                    'name': 'Saint-Cloud',
+                    'description':`Siège Social`,
+                    'sbui':'depuis : 2012',
+                    'collabo':'Collaborateurs : 30',
                   }
                 },
 
@@ -76,7 +87,23 @@
                   },
                   'properties': {
                     'name': 'Salin',
-                    'description':`la ville de merde en fait t'as cru que t'étais qui là ? (ouai...ouai je parle à toi petite bouse des champ qui lit ce texte)`
+                    'description':`Site de production`,
+                    'sbui':'depuis : 2013',
+                    'collabo':'Collaborateurs : 90',
+                  }
+                },
+                {
+                  'type': 'Feature',
+                  'geometry': {
+                    'type': 'Point',
+                    'coordinates': [  23.890249839302232,-30.4982097437332]
+                  },
+                  'properties': {
+                    'name': 'Afrique du sud',
+                    'description':`Culture :agrume, pomme , poire, prune, pêche`,
+                    'collabo':'depuis : 2016',
+                    'sbui':'Partenaire : Bancella, Bayer Produits: Cydia Press, Tuta Press, Cydia Spray, Grapholita Spray, FCM',
+
                   }
                 },
                 // Ajouter d'autres villes ou points clés ici
@@ -133,12 +160,22 @@
   // Add event listener for the click event on markers
   map.on('click', 'cities', (e) => {
       const cityName = e.features[0].properties.description;
-      markerContent.set(`You clicked on ${cityName}.`);
+      markerContent.set(`${cityName}.`);
       // ...
     });
   map.on('click', 'cities', (e) => {
       const cityName = e.features[0].properties.name;
       markerTitle.set(`${cityName}.`);
+      // ...
+    });
+    map.on('click', 'cities', (e) => {
+      const cityName = e.features[0].properties.sbui;
+      markerdate.set(`${cityName}.`);
+      // ...
+    });
+    map.on('click', 'cities', (e) => {
+      const cityName = e.features[0].properties.collabo;
+      markercollabo.set(`${cityName}.`);
       // ...
     });
 
@@ -167,6 +204,8 @@
 			{ $markerTitle }
 		</div>
 		<div>{ $markerContent }</div>
+		<div>{ $markerdate}</div>
+		<div>{ $markercollabo}</div>
 		
 		<Bouton content={'découvrir'}/>
 	</div>

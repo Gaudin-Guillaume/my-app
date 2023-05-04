@@ -60,7 +60,6 @@ let current=0;
         left:0;
         width:100%;
         height:2px;
-        background-color:white;
     }
 
     nav.open{
@@ -69,7 +68,6 @@ let current=0;
         top:100%;
         left:0;
         width:100%;
-        background-color:#ebebeb;
 
     }
 
@@ -93,7 +91,6 @@ let current=0;
     .burger > div {
         height:2px;
         width:14px;
-        background-color:white;
         position:absolute;
     }
 
