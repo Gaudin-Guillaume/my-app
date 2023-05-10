@@ -194,6 +194,8 @@
     #map {
       height: 80vh;
       width: 100%;
+      align-self:start;
+      border:solid 1px #A4A4A4;
     }
   </style>
   <div class="relative flex items-center h-screen">

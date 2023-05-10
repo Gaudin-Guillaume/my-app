@@ -1,11 +1,13 @@
 <script>
 	import Bouton from '$lib/components/Button.svelte';
 	import Boutonbis from '$lib/components/Buttonbis.svelte';
+	import Par from '$lib/components/parralax.svelte';
 	
 
 	import Map from '$lib/components/Mapbox.svelte';
 
 </script>
+
 
 <section id="hero" class="flex pt-32 md:pt-12 flex-col justify-center gap-8 md:flex-row items-center overflow-visible px-4 md:px-32">
 
@@ -22,67 +24,26 @@
 	</div>
 	</div>
 	
-	<video autoplay loop muted class=" w-11/12 md:w-3/6 object-cover relative h-screen md:h-screen ">
+	<video autoplay loop muted class=" w-11/12 md:w-3/6 object-cover relative top-6 md:top-0 h-screen md:h-screen ">
 		<source src="/hero(bis).mp4" type="video/mp4" />
 	</video>
 
-
-
 </section>
 
-<section class="flex flex-col md:flex-row gap-4 md:gap-32 my-32 md:my-0 px-4 md justify-center items-center align-center h-fit md:h-screen ">
+<Par />
 
-	<div class="flex flex-col md:flex-row justify-center relative w-fit" style="width:400px;">
-		<div class=" w-96 min-w-full h-96 top-12 right-12 relative" style="background-color:rgba(227, 138, 112, 0.3);"></div>
-		<div class="min-w-full h-96 bottom-48 right-32 absolute" style="background-color:#15514F; width:50vw; height:32rem;"></div>
-		<img src="./cocci.png" alt="produit de biocontrole" class="w-96 absolute" >
-    </div>
 
-	<div class="flex flex-col gap-4 w-96 px-4 ">
-		<div class=" w-fit rounded-lg p-2 bg-secondary-500 shadow-lg ">
-			<img src="./feuille.png" alt="icone feuille d'arbre">
-		</div>
-		<div class="text-xl font-thin" style="color:#15514F;">Biocontrole</div>
-		<div class="text-2xl font-semibold">
-			Solutions pour la protection des cultures .
-		</div>
-		<div>
-			Nous concevons des produits de biocontrole naturels certifiés pour une utilisation en agriculture biologique et respectueux de l'environnement. Nos solutions écologiques sont adaptées à tous les types de cultures. Protégez vos cultures tout en préservant la biodiversité avec nos produits de biocontrôle.
-		</div>
-	    <div class="flex space-x-4">
-		<Bouton content={'en savoir plus'}/>
-		<Boutonbis content={'nos produits'}/>
-</div>
 
-	</div>
-
-</section>
-
-<section class=" flex flex-col md:flex-row gap-4 md:gap-32 my-32 md:my-0 px-4 justify-center items-center align-center h-fit md:h-screen">
-	<div class="w-96 gap-4 flex flex-col p-4">
-		<div class=" w-fit rounded-lg p-2 bg-secondary-500 shadow-lg ">
-			<img src="./chimie-pharma.png" alt="icone feuille d'arbre">
-		</div>
-		<div class="text-xl font-thin" style="color:#15514F;">Chimie & pharmaceutique</div>
-		<div class="text-2xl font-semibold">
-			Innovations et recherche en chimie et pharmaceutique.
-		</div>
-		<div>
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-		</div>
-		<Bouton content={'découvrir'}/>
-	</div>
-	
-		<img src="./labo.png" alt="produits pharmaceutiques" class="w-96" >
-	
-
-</section>
-
-<section class=" flex flex-col justify-center items-center align-center  w-screen p-4 h-fit md:h-fit gap-8" style="background-color:rgba(23, 89, 87, 0.1)">
-	<div class="flex flex-col gap-4 justify-center w-screen px-4 md:p-32">
-		<div class="text-4xl font-semibold text-left ">Quelques chiffres à propos de notre activités.</div>
+<section class=" flex flex-col justify-center items-center align-center  w-screen p-4 h-fit md:h-screen gap-8" style="background-color:rgb(23, 89, 87);">
+	<div class="flex flex-col gap-8">
+	<div class="flex flex-col gap-4 justify-start" style="color:white;">
+		<div class="text-4xl font-semibold text-left "><span class="head">Quelques chiffres</span> à propos de notre activités.</div>
 		<div class="w-96 text-left">
 		Retrouver toutes les données chiffrées clé de M2i sur le marché pharmaceutique, chimie fine, biocontrol et nos engagement RSE.
+		</div>
+		<div class="flex space-x-4">
+			<Bouton content={'en savoir plus'}/>
+			<Boutonbis content={'nos produits'}/>
 		</div>
 	</div>
 <div class="flex flex-col md:flex-row gap-8">
@@ -106,7 +67,7 @@
 		<Bouton content={'découvir'}/>
 	</div>
 
-	<div class="card flex:col p-4 space-y-4 w-96">
+	<div class="flex:col p-4 space-y-4 w-96" style="border:solid 1px #15514F; background-color:white;">
 		<div class="w-fit rounded-lg p-2 bg-secondary-500 shadow-lg ">
 			<img src="./feuille.png" alt="icone feuille d'arbre">
 		</div>
@@ -118,15 +79,8 @@
 	</div>
 	
 </div>
-
-<div class="flex space-x-4">
-	<Bouton content={'en savoir plus'}/>
-	<Boutonbis content={'nos produits'}/>
 </div>
-
-
 </section>
-
 
 
 <Map/>
@@ -147,10 +101,7 @@
 
 	}
 
-	.head{
-		background-color:white;
-		color:#15514F;
-	}
+	
 
 	
 

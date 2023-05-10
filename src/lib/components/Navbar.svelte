@@ -40,7 +40,9 @@ let current=0;
         display:flex;
         justify-content:space-between;
         align-items:center;
-        position:relative;
+        position:fixed;
+        width:100vw;
+        background-color:rgba(255,255,255, 0.5)
     }
     .logo{
         margin-left:6vw;

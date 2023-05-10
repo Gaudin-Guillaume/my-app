@@ -11,9 +11,7 @@ import '../app.postcss';
 						
 
 	import Header from '$lib/components/Navbar.svelte';
-	import Footer from '$lib/layout/Footer.svelte';
 
-	import { AppShell } from '@skeletonlabs/skeleton';
 
 	
 
@@ -21,15 +19,6 @@ import '../app.postcss';
 </script>
 
 <!-- <Header /> -->
+<Header/>
 
-<AppShell>
-	<svelte:fragment slot="header">
-		<Header />
-	</svelte:fragment>
-
-	<div >
-		<slot />
-	</div>
-
-	<svelte:fragment slot="footer"></svelte:fragment>
-</AppShell>
+<slot />
