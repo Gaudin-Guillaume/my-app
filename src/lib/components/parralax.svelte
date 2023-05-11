@@ -40,7 +40,7 @@
 	</div>
 
 </section>
-<section class=" flex flex-col md:flex-row gap-4 md:gap-32 my-32 md:my-0 px-4 justify-center w-screen  items-center align-center h-screen md:h-screen" >
+<section class=" flex flex-col md:flex-row gap-4 md:gap-32 my-32 md:my-0 px-4 justify-center w-screen  items-center align-center h-fit md:h-screen" >
 	<div class="w-96 gap-4 flex flex-col p-4">
 		<div class=" w-fit rounded-lg p-2 bg-secondary-500 shadow-lg ">
 			<img src="./chimie-pharma.png" alt="icone feuille d'arbre">
@@ -61,9 +61,9 @@
 </section>
 </div>
 
-<Parallax sections={1.1} sectionHeight={isMobile ? window.innerHeight /1 : window.innerHeight/0.6} bind:this={parallax} style="overflow:visible;" class="my-32 absolute">
+<Parallax sections={2}  bind:this={parallax} style="overflow:visible;" class="my-32 absolute">
 	
-	<ParallaxLayer offset={0.9} rate={2.5} style="display: flex; justify-content: flex-end;">
+	<ParallaxLayer offset={1} rate={2.5} style="display: flex; justify-content: flex-end;">
 		<div style="background-color: #E38A70;" class="w-64 md:w-96 h-64 md:h-96"/>
 	</ParallaxLayer>
 	
