@@ -1,7 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import mapboxgl from 'mapbox-gl';
-    import Bouton from '$lib/components/Button.svelte';
+    import Bouton from '$lib/components/Buttonw.svelte';
 	import Boutonbis from '$lib/components/Buttonbis.svelte';
 	import { object_without_properties } from 'svelte/internal';
   import {markerContent} from '$lib/utils.js'
@@ -190,6 +190,24 @@
       });
   </script>
   
+  
+  <div class="relative  flex items-center justify-center h-screen">
+  <div id="map" class="absolute"></div>
+
+  <section class="flex size justify-start" style="max-width:1100px;padding-left:80px;padding-right:80px; padding-top:80px; width:100vw; height:100%;">
+  <div class=" gap-4 w-fit  flex flex-col absolute" style="color:white; max-width:400px;">
+		<div class="text-3xl font-regular w-fit">
+			{ $markerTitle }
+		</div>
+		<div >{ $markerContent }</div>
+		<div >{ $markerdate}</div>
+		<div >{ $markercollabo}</div>
+		
+		<Bouton content={'découvrir notre activité mondial'}/>
+	</div>
+</section>
+  </div>
+
   <style>
     #map {
       height: 80vh;
@@ -197,18 +215,17 @@
       align-self:start;
       border:solid 1px #A4A4A4;
     }
-  </style>
-  <div class="relative flex items-center h-screen">
-  <div id="map" class="absolute"></div>
+    .size{
+      padding-left:16px;
+      padding-right:16px;
 
-  <div class=" gap-4 w-screen md:w-2/4 flex flex-col absolute px-4 md:px-32" style="color:white;">
-		<div class="text-2xl font-semibold">
-			{ $markerTitle }
-		</div>
-		<div>{ $markerContent }</div>
-		<div>{ $markerdate}</div>
-		<div>{ $markercollabo}</div>
-		
-		<Bouton content={'découvrir'}/>
-	</div>
-  </div>
+    }
+
+   
+
+
+    
+      
+    
+  </style>
+ 

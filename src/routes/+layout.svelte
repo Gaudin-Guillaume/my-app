@@ -1,4 +1,5 @@
 <script>
+	import "carbon-components-svelte/css/g10.css";
 
 	
 // Your custom Skeleton theme:
@@ -11,6 +12,7 @@ import '../app.postcss';
 						
 
 	import Header from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/layout/Footer.svelte'
 
 
 	
@@ -22,3 +24,5 @@ import '../app.postcss';
 <Header/>
 
 <slot />
+
+<Footer/>

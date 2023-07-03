@@ -2,7 +2,7 @@
 	export let content ='';
 </script>
 
-<button class="shadow-lg rounded-lg">{content}<img src="./plus+.png" alt="flèche" class="h-6 ml-3 mr-0 "/></button>
+<button class="shadow-lg rounded-sm">{content}<img src="./plus+.png" alt="flèche" class="h-6 ml-3 mr-0 "/></button>
 
 <style>
 	button {

@@ -1,53 +1,70 @@
-<script>
-	import Icon from '@iconify/svelte';
-
-</script>
-
-<footer class="container">
-	<nav>
+<section class="w-screen color flex flex-col gap-8 items-center justify-center pt-32 pb-16">
+	<hr>
+	<div class="flex flex-col gap-8 intern">
+	<div class="flex flex-col md:flex-row gap-8 justify-between">
+	<div class="flex flex-col gap-4">
+		<div class="text-xl">Contact</div>
 		<ul>
-			<li><a href="/">
-				<iconify-icon icon="uil:facebook-f"></iconify-icon>
-			</a></li>
-			<li><a href="/">
-				<iconify-icon icon="uil:instagram"></iconify-icon>
-			</a></li>
-			<li><a href="/">
-				<iconify-icon icon="uil:twitter"></iconify-icon>
-			</a></li>
-			<li><a href="/">
-				<iconify-icon icon="uil:youtube"></iconify-icon>
-			</a></li>
+			<li>Nous contacter</li>
+			<li>Newsletter</li>
 		</ul>
-
+	</div>
+	<div class="flex flex-col gap-4">
+		<div class="text-xl">Expertises</div>
 		<ul>
-			<li><a href="/">Cookies</a></li>
-			<li><a href="/">Work</a></li>
-
+			<li>Biocontrol</li>
+			<li>Pharmaceutiques</li>
+			<li>Synthèse</li>
 		</ul>
-	</nav>
-</footer>
-
-<style>
-	footer {
-		margin-top: auto;
-		padding-block: 1rem;
-	}
-	nav,
-	ul {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	ul {
-		gap: 1em;
-    }
-
-
-
-	a	{
-		color: var(--primrary-inverse);
-	}
-
-</style>
+	</div>
+	<div class="flex flex-col gap-4">
+		<div class="text-xl">Légal</div>
+		<ul>
+			<li>Mentions légales</li>
+			<li>Accéssibilité</li>
+			<li>Plan du site</li>
+		</ul>
+	</div>
+	<div class="flex flex-col gap-4">
+		<div class="text-xl">Accès rapide</div>
+		<ul>
+			<li>Nous rejoindre</li>
+			<li>RSE</li>
+			<li>Nos chiffres</li>
+			<li>Actualitée</li>
+		</ul>
+	</div>
+	<div class="flex flex-col gap-4">
+		<div class="text-xl">Nous suivre</div>
+		<ul>
+			<li><div>Youtube</div></li>
+			<li><div>Accéssibilité</div></li>
+			<li><div>Plan du site</div></li>
+		</ul>
+	</div>
+	</div>
+	<div class="self-start">© Copyright M2i Group 2023</div>
+	</div>
+	</section>
+	
+	<style>
+		.color{
+			background-color:#103332;
+			height:fit-content;
+		}
+	
+		.intern{
+			color:white;
+			width:100vw;
+			max-width:1440px;
+			padding-left:16px;
+			padding-right:16px;
+		}
+	
+		@media (min-width:768px){
+			.intern{
+			padding-left:72px;
+			padding-right:72px;
+		}
+		}
+	</style>

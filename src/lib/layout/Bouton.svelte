@@ -1,5 +1,6 @@
 <script>
 	export let content='';
+	
 </script>
 
 <button class="rounded-xl">{content}</button>
