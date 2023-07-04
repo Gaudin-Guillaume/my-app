@@ -5,7 +5,6 @@
 	 // Personnalisez la valeur 768 selon vos besoins pour déterminer le point de rupture mobile/desktop;
 	let parallax;
 	import Bouton from '$lib/components/Button.svelte';
-	import Boutonbis from '$lib/components/Buttonbis.svelte';
 	
 </script>
 <div class="relative" style="height:max-content">

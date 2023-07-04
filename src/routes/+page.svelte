@@ -1,10 +1,9 @@
 <script>
 	import Bouton from '$lib/components/Button.svelte';
 	import Boutonw from '$lib/components/Buttonw.svelte';
-	import Boutonbis from '$lib/components/Buttonbis.svelte';
+	
 	import Par from '$lib/components/parralax.svelte';
 	import Actu from '$lib/components/actuhome.svelte';
-	import Test from'$lib/components/sectiontest.svelte';
 	import Newsletter from '$lib/components/Newsletter.svelte';
 	import Contact from '$lib/components/ContactForm.svelte'
 	
@@ -62,7 +61,7 @@
 	
 	<div class="flex space-x-4">
 		<Boutonw content={'en savoir plus'}/>
-		<Boutonbis content={'nos produits'}/>
+		
 	</div>
 	</div>
 	

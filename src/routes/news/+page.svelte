@@ -3,7 +3,7 @@ import {getAssetURL} from '$lib/utils.js'
 import Button from '$lib/components/Button.svelte';
 import { directusClient } from '$lib/directus';
 
-const articles = directusClient.items('articles').readByQuery({
+const articles = directusClient.items('Articles').readByQuery({
 		limit: -1,
 		filter: {
 			status: {

@@ -37,7 +37,7 @@
           <div>
             <header>
               <div class="imgcontainer">
-                <img src="{item.Image}" alt={item.title} loading="lazy" class="object-cover" />
+                <img src={getAssetURL(item.Image)} alt={item.title} loading="lazy" class="object-cover" />
               </div>
 
               
@@ -79,19 +79,7 @@
     max-height: 220px;
   }
 
-  .imgcontainerbis {
-    overflow: hidden;
-    max-height: 200px;
-  }
-
-  
-
-  .articles-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .other-articles-container {
+    .other-articles-container {
     display: flex;
     justify-content:sspace-between;
     height: 100%;

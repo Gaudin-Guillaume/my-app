@@ -2,8 +2,6 @@
     import { onMount } from 'svelte';
     import mapboxgl from 'mapbox-gl';
     import Bouton from '$lib/components/Buttonw.svelte';
-	import Boutonbis from '$lib/components/Buttonbis.svelte';
-	import { object_without_properties } from 'svelte/internal';
   import {markerContent} from '$lib/utils.js'
   import {markerTitle} from '$lib/utils.js'
   import {markerdate} from '$lib/utils.js' 
