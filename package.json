@@ -17,7 +17,6 @@
 		"@sveltejs/adapter-auto": "^1.0.3",
 		"@sveltejs/kit": "^1.21.0",
 		"autoprefixer": "^10.4.14",
-		"carbon-components-svelte": "^0.75.1",
 		"eslint": "^8.44.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte3": "^4.0.0",
