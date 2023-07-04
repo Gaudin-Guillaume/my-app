@@ -7,7 +7,7 @@ export default defineConfig({
   ],
   build: {
     rollupOptions: {
-      input: 'src/app.d.ts', // Chemin d'accès au fichier d'entrée Svelte
+      input: 'src/app.html', // Chemin d'accès au fichier d'entrée Svelte
     },
   },
   esbuild: {
