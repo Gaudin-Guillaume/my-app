@@ -1,6 +1,5 @@
 <script>
     import Bouton from '$lib/components/Buttonw.svelte';
-	import Boutonbis from '$lib/components/Buttonbis.svelte';
     import Actu from '$lib/components/actuhome.svelte';
    
 	
