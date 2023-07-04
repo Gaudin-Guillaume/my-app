@@ -2,7 +2,7 @@ import { createEndpoint } from '@sveltejs/kit/api';
 import express from 'express';
 import nodemailer from 'nodemailer';
 
-const app = express();
+export const app = express();
 const router = express.Router();
 
 const transporter = nodemailer.createTransport({
