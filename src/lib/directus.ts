@@ -1,8 +1,8 @@
 import { Directus } from '@directus/sdk';
+import { PUBLIC_DIRECTUS_URL } from '$env/static/public';
 
-const directus = new Directus(import.meta.env.VITE_PUBLIC_DIRECTUS_URL);
 
-
+const directus = new Directus(PUBLIC_DIRECTUS_URL);
 
 const MAIL = import.meta.env.VITE_DIRECTUS_EMAIL;
 const PASS = import.meta.env.VITE_DIRECTUS_PASSWORD;

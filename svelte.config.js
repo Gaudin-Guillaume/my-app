@@ -7,6 +7,14 @@ const config = {
 		adapter: adapter()
 		
 	},
+	preprocess: [
+		preprocess({
+			postcss: true,
+			script: ({ content }) => ({
+				code: content,
+			}),
+		}),
+	],
 
 	preprocess: [
 		preprocess({
