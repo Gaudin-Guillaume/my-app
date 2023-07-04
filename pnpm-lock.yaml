@@ -7,7 +7,6 @@ specifiers:
   '@sveltejs/adapter-auto': ^1.0.3
   '@sveltejs/kit': ^1.21.0
   autoprefixer: ^10.4.14
-  carbon-components-svelte: ^0.75.1
   directus-sdk-javascript: ^2.15.0
   dotenv: ^16.3.1
   eslint: ^8.44.0
@@ -43,7 +42,6 @@ devDependencies:
   '@sveltejs/adapter-auto': 1.0.3_@sveltejs+kit@1.21.0
   '@sveltejs/kit': 1.21.0_svelte@3.59.2+vite@4.3.9
   autoprefixer: 10.4.14_postcss@8.4.24
-  carbon-components-svelte: 0.75.1
   eslint: 8.44.0
   eslint-config-prettier: 8.8.0_eslint@8.44.0
   eslint-plugin-svelte3: 4.0.0_gb2i5xrfiqj7crsure3htyekwe
@@ -802,12 +800,6 @@ packages:
     resolution: {integrity: sha512-2S9nK0G/mE+jasCUsMPlARhRCts1ebcp2Ji8Y8PWi4NDE1iRdLCnEPHkEfeBrGC45L4isBx5ur3IQ6yTE2mRZw==}
     dev: true
 
-  /carbon-components-svelte/0.75.1:
-    resolution: {integrity: sha512-q1aCDbUW9U8NJMLj/FesL9E2ymqWONWlGDEKoawRtVK7XvsD5ynK1amu2l3cs5mFvagLnkVAcSmyzyTAaie5ug==}
-    dependencies:
-      flatpickr: 4.6.9
-    dev: true
-
   /chalk/4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
@@ -1342,10 +1334,6 @@ packages:
     dependencies:
       flatted: 3.2.7
       rimraf: 3.0.2
-    dev: true
-
-  /flatpickr/4.6.9:
-    resolution: {integrity: sha512-F0azNNi8foVWKSF+8X+ZJzz8r9sE1G4hl06RyceIaLvyltKvDl6vqk9Lm/6AUUCi5HWaIjiUbk7UpeE/fOXOpw==}
     dev: true
 
   /flatted/3.2.7:
