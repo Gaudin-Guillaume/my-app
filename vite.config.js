@@ -1,7 +1,12 @@
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
+
 export default defineConfig({
-	esbuild: {
-	  supported: {
-		'top-level-await': true //browsers can handle top-level-await features
-	  },
-	}
-  });
+  plugins: [
+    svelte(),
+  ],
+  esbuild: {
+    // Cette configuration permet d'utiliser top-level-await dans votre code Svelte
+    jsxInject: "import { __await } from 'svelte/internal';",
+  },
+});
