@@ -1,10 +1,3 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-
-/** @type {import('vite').UserConfig} */
-const defineConfig = {
-	plugins: [sveltekit()]
-};
-
 export default defineConfig({
 	esbuild: {
 	  supported: {
