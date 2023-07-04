@@ -4,7 +4,6 @@
     import { directusClient } from '$lib/directus';
     import { Avatar } from '@skeletonlabs/skeleton';
     import Bouton from '$lib/components/Buttonw.svelte';
-import Boutonbis from '$lib/components/Buttonbis.svelte';
   import Actu from '$lib/components/actuhome.svelte';
     
     const articles = directusClient.items('articles').readByQuery({
