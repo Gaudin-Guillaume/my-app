@@ -5,6 +5,11 @@ export default defineConfig({
   plugins: [
     svelte(),
   ],
+  build: {
+    rollupOptions: {
+      input: 'src/app.d.ts', // Chemin d'accès au fichier d'entrée Svelte
+    },
+  },
   esbuild: {
     // Cette configuration permet d'utiliser top-level-await dans votre code Svelte
     jsxInject: "import { __await } from 'svelte/internal';",
