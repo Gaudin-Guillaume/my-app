@@ -5,6 +5,7 @@
 	import Par from '$lib/components/parralax.svelte';
 	import Actu from '$lib/components/actuhome.svelte';
 	import Newsletter from '$lib/components/Newsletter.svelte';
+	import Contact from "$lib/components/"
 
 	
 
@@ -88,7 +89,7 @@
 	</div>
 <div class="flex flex-col md:flex-row gap-8">
 	
-	<div class="flex-col cardo p-4 space-y-4 w-96" style="border:solid 1px #15514F; background-color:white;">
+	<div class="flex-col scroll cardo p-4 space-y-4 w-96" style="border:solid 1px #15514F; background-color:white;">
 		
 		<div class="font-thin text-4xl">22 000</div>
 		<span class="text-xl font-thin" style="color:#15514F">pesticides conventionnels évitées</span>
@@ -176,6 +177,10 @@
 		padding-top:64px;
 
 
+	}
+
+	.scroll{
+		overflow-x: scroll;
 	}
 
 	
