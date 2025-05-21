@@ -5,7 +5,7 @@
 	import Par from '$lib/components/parralax.svelte';
 	import Actu from '$lib/components/actuhome.svelte';
 	import Newsletter from '$lib/components/Newsletter.svelte';
-	import Contact from "$lib/components/"
+	import Contact from '$lib/components/Contact.svelte';
 
 	
 
