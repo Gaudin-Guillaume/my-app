@@ -1,30 +1,29 @@
 import { Directus } from '@directus/sdk';
 
-const directus = new Directus(import.meta.env.PUBLIC_DIRECTUS_URL || 'http://109.106.244.56:8055');
+// Use VITE_ prefix for all environment variables to ensure they're exposed to the client
+const directus = new Directus(import.meta.env.VITE_DIRECTUS_URL || 'http://109.106.244.56:8055');
 
 const MAIL = import.meta.env.VITE_DIRECTUS_EMAIL;
 const PASS = import.meta.env.VITE_DIRECTUS_PASSWORD;
 const TOKEN = import.meta.env.VITE_DIRECTUS_TOKEN;
 
 async function getDirectusClient() {
-    if (await directus.auth.token) return directus;
-
+    // Don't check for existing token as it might be expired or invalid
     try {
-        if (MAIL && PASS) {
+        if (TOKEN) {
+            await directus.auth.static(TOKEN);
+        } else if (MAIL && PASS) {
             await directus.auth.login({
                 email: MAIL,
                 password: PASS
             });
-        } else if (TOKEN) {
-            await directus.auth.static(TOKEN);
         } else {
-            // Fallback to public access if no credentials are provided
+            console.log('No authentication credentials provided, falling back to public access');
             return directus;
         }
     } catch (error) {
         console.error('Directus authentication error:', error);
-        // Return directus instance even if authentication fails
-        // This will allow public access to public collections
+        // Return directus instance for public access
         return directus;
     }
 
