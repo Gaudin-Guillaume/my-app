@@ -84,6 +84,7 @@
     display: flex;
     flex-direction: column;
     flex-basis: calc(100% / 3);
+    )
     box-sizing: border-box;
   }
 
